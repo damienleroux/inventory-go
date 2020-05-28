@@ -11,7 +11,7 @@ Please, make sure your environnement is set with:
 - [Docker](https://docs.docker.com/engine/install/)
 - [Docker-compose](https://docs.docker.com/compose/install/)
 - [Go](https://golang.org/)
-- [grpC: protoc & protoc-gen-go](https://grpc.io/docs/quickstart/go/)
+- [gRPC: protoc & protoc-gen-go](https://grpc.io/docs/quickstart/go/)
 
 ## Commands
 
