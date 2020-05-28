@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option go_package = "grpc";
+
+enum ReservationStatus {
+  RESERVED = 0;
+  BACKORDER = 1;
+  PENDING = 2;
+}
+
+message ReservationLine {
+  string product = 1;
+  uint32 quantity = 2;
+}
+
+message ReserveRequest {
+  repeated ReservationLine lines = 1;
+}
+
+message ReserveResponse {
+  string ID = 1;
+  ReservationStatus status = 2;
+  repeated ReservationLine lines = 3;
+  string createdAt = 4;
+}
+
+service Reservation {
+  rpc Reserve (ReserveRequest) returns (ReserveResponse) {}
+}
