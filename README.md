@@ -21,7 +21,7 @@ Run `sh ./start.sh` to deploy Docker containers
 
 ### Test
 
-Run `sh ./test.sh` to run unit test
+Run `sh ./test.sh` to run unit tests
 
 ## Structure
 
@@ -39,6 +39,5 @@ Possible future improvements:
 - Solve [`inventory-db` caveats](./applications/inventory-db/Readme.md)
 - Solve [`inventory-api` caveats](./applications/inventory-api/Readme.md)
 - [docker-compose.yml](./docker-compose.yml) should not instanciate the DB. A dedicated environnement should be available for database interactions, even locally. For now, to ease testing, the DB creation is provided through [docker-compose.yml](./docker-compose.yml).
-- We could replace gRPC connexions with message queues like rabbitMQ. This could be useful if asynchronous actions are necessary.
-- Add a dictionnary for API error calls
+- We could replace gRPC connexions with message queues (using rabbitMQ for example). This could be useful if asynchronous actions are necessary.
 - Build the services and deploy only binaries. "`go run`" should be kept for development purpose only.
