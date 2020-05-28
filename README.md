@@ -21,7 +21,7 @@ Run `sh ./start.sh` to deploy Docker containers
 
 ### Test
 
-Run `sh ./start.sh` to run unit test
+Run `sh ./test.sh` to run unit test
 
 ## Structure
 
